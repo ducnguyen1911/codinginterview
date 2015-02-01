@@ -4,13 +4,14 @@ public class Node {
 	int data;
 	Node next = null;
 
+	Node() {}
+	
 	Node(int d) {
 		this.data = d;
 	}
 
 	/**
 	 * Append a new node to the tail of LinkedList
-	 * 
 	 * @param d
 	 */
 	void append(int d) {
@@ -24,7 +25,6 @@ public class Node {
 
 	/**
 	 * Delete a node with a given data then return head node.
-	 * 
 	 * @param d
 	 */
 	Node delete(Node head, int d) {
@@ -54,6 +54,7 @@ public class Node {
 			if (n.next != null) {
 				n = n.next;
 			} else {
+				System.out.println();
 				break;
 			}
 		}
@@ -61,7 +62,6 @@ public class Node {
 
 	/**
 	 * Main function
-	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
