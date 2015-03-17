@@ -63,14 +63,10 @@ public class PaintFill7 {
 
 	private List<Point> getNeighbors(int lat, int log){
 		List<Point> neighbors = new ArrayList<Point>();
-		neighbors.add(new Point(lat -1, log - 1));
 		neighbors.add(new Point(lat -1, log ));
-		neighbors.add(new Point(lat -1, log + 1));
 		neighbors.add(new Point(lat, log - 1));
 		neighbors.add(new Point(lat, log + 1));
-		neighbors.add(new Point(lat +1, log - 1));
 		neighbors.add(new Point(lat +1, log ));
-		neighbors.add(new Point(lat +1, log + 1));
 		return neighbors;
 	}
 
@@ -85,6 +81,5 @@ public class PaintFill7 {
 		public int getLat(){ return this.lat;}
 		public int getLog(){ return this.log;}
 	}
-
 
 }
