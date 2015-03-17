@@ -9,11 +9,11 @@ public class Subset4 {
 
 	public static void main(String[] args) {
 		Subset4 s = new Subset4();
-		List<String> lst = s.findSubsets(3);
+		List<String> lst = s.findSubsets(22);
 		System.out.println(lst.size());
-		for (String str : lst) {
-			System.out.println(str);
-		}
+//		for (String str : lst) {
+//			System.out.println(str);
+//		}
 
 	}
 
@@ -39,4 +39,10 @@ public class Subset4 {
 			return ret;	
 		}
 	}
+
+	/*
+	* Time: O(2^n)
+	* Space: O(2^n). Think in the way that if an element is not in a subset -> 0,
+	* or 1 if it is in a subset.
+	*/
 }
